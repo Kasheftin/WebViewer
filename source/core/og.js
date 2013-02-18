@@ -212,6 +212,17 @@ function _CreateObject(typ, parent, options)
    return newobject;
 }
 goog.exportSymbol('_CreateObject', _CreateObject);
+//------------------------------------------------------------------------------
+/**
+ * @description Retreive object itself
+ * @param {number} object_id the object id
+ * @returns {object} the object itself
+ */
+function ogGetObjectFromId(object_id)
+{
+	return _GetObjectFromId(object_id);
+}
+goog.exportSymbol('ogGetObjectFromId', ogGetObjectFromId);
 //##############################################################################
 // ** GENERAL OBJECT FUNCTIONS **
 //##############################################################################
